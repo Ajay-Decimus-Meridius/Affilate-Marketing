@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Affiliate Marketing Page</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        /* Banner */
+        .banner {
+            width: 100%;
+            height: 200px;
+            background-image: url('data:image/png;base64,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'); /* Replace with banner image URL */
+            background-size: cover;
+            background-position: center;
+            margin-bottom: 20px;
+        }
+
+        /* Search Bar */
+        .search-container {
+            display: flex;
+            justify-content: flex-end;
+            padding: 10px 20px;
+            background-color: #fff;
+        }
+
+        #searchInput {
+            width: 250px;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        /* Page Heading */
+        .page-heading {
+            text-align: center;
+            font-size: 24px;
+            margin: 20px 0;
+            color: #218838;
+        }
+
+        /* Product Container */
+        .products-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 10px;
+        }
+
+        /* Individual Product */
+        .product {
+            position: relative;
+            width: 220px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            padding-bottom: 15px;
+            transition: transform 0.3s;
+        }
+
+        .product:hover {
+            transform: scale(1.03);
+        }
+
+        .product img {
+            width: 100%;
+            height: auto;
+            cursor: pointer;
+        }
+
+        .product-description {
+            margin: 10px;
+            font-size: 14px;
+            color: #555;
+        }
+
+        /* Small Buy Button */
+        .buy-button {
+            display: inline-block;
+            margin: 5px;
+            padding: 5px 10px;
+            background-color: #28a745; /* Coconut green */
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 12px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .buy-button:hover {
+            background-color: #218838;
+        }
+
+        /* Highlight Matching Product */
+        .highlight {
+            border: 3px solid #218838;
+        }
+    </style>
+</head>
+<body>
+    <!-- Banner -->
+    <div class="banner">
+    </div>
+
+    <!-- Search Bar -->
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search for products..." oninput="searchProducts()">
+    </div>
+
+    <!-- Page Heading -->
+    <div class="page-heading">Hair Care</div>
+
+    <!-- Products -->
+    <div class="products-container" id="products">
+        <!-- Product 1 -->
+        <div class="product" data-description="Muuchstac Cocoalo Hair Cream" id="product1">
+            <img src="https://m.media-amazon.com/images/I/31H9pzdrWoL._SX300_SY300_QL70_FMwebp_.jpg" alt="Product 1" onclick="navigateTo('https://amzn.to/4fi3Vly')">
+            <div class="product-description">
+                <strong>₹199</strong><br>
+                Muuchstac Cocoalo Hair Cream
+            </div>
+            <a href="https://amzn.to/4fi3Vly" class="buy-button" target="_blank">Buy</a>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product" data-description="Beardo Daily Clean Shampoo" id="product2">
+            <img src="https://m.media-amazon.com/images/I/61WLSYlXcyL._SX569_.jpg" alt="Product 2" onclick="navigateTo('https://amzn.to/4gy9Tj8')">
+            <div class="product-description">
+                <strong>₹349</strong><br>
+                Beardo Daily Clean Shampoo
+            </div>
+            <a href="https://amzn.to/4gy9Tj8" class="buy-button" target="_blank">Buy</a>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product" data-description="Beardo Spider Wax " id="product3">
+            <img src="https://m.media-amazon.com/images/I/71eTg7-c+uL._AC_UL320_.jpg" alt="Product 3" onclick="navigateTo('https://amzn.to/41yKUI6')">
+            <div class="product-description">
+                <strong>₹299</strong><br>
+                Beardo Spider Wax 
+            </div>
+            <a href="https://amzn.to/41yKUI6" class="buy-button" target="_blank">Buy</a>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        // Function to navigate to product URL when clicking image
+        function navigateTo(url) {
+            window.open(url, '_blank');
+        }
+
+        // Search Functionality
+        function searchProducts() {
+            const searchInput = document.getElementById('searchInput').value.toLowerCase();
+            const products = document.querySelectorAll('.product');
+            let found = false;
+
+            // Reset previous highlights
+            products.forEach(product => product.classList.remove('highlight'));
+
+            // Loop through products and find matches
+            products.forEach(product => {
+                const description = product.getAttribute('data-description').toLowerCase();
+                if (description.includes(searchInput) && searchInput !== '') {
+                    product.classList.add('highlight');
+                    product.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    found = true;
+                }
+            });
+
+            if (!found && searchInput !== '') {
+                alert('No matching products found.');
+            }
+        }
+    </script>
+</body>
+</html>
